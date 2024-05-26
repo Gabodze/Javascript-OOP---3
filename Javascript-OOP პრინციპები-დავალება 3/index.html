@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    class Cube {
+        heignt = "";
+        width = "";
+        length = "";
+
+        set_height(){
+            this.height = "100px";
+        } 
+        set_width() {
+            this.width = "100px";
+        }
+        set_length() {
+            this.length = "100px";
+        }
+
+        get_height(){
+            console.log(this.height);
+        }
+        get_width(){
+            console.log(this.width);
+        }
+        get_length(){
+            console.log(this.length);
+        }
+    }
+    var object = new Cube();
+    object.set_height();
+    object.set_width();
+    object.set_length();
+    document.write(object.height + " " + object.width + " " + object.length);
+    object.get_height();
+    object.get_width();
+    object.get_length();
+    </script>
+</body>
+</html>
